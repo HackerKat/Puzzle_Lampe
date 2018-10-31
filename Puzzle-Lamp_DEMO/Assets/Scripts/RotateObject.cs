@@ -13,7 +13,5 @@ public class RotateObject : MonoBehaviour {
 
 
         transform.RotateAround(Vector3.up, -rotX);
-
-
     }
 }
