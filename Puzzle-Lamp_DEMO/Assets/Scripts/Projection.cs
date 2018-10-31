@@ -8,7 +8,11 @@ public class Projection : MonoBehaviour {
 	GameObject[] filters;
 	bool[] filtersValue;
 	Clickable script;
-	public string text = "";
+	public Material material;
+	Color newColor;
+	float r;
+	float g;
+	float b;
 
 
 	// Use this for initialization
@@ -18,13 +22,17 @@ public class Projection : MonoBehaviour {
 		filterNumber = filters.Length;
 		filtersValue = new bool[filterNumber];
 
-		text = GetComponent<TextMesh> ().text;
+		material = GetComponent<Renderer> ().material;
+		r = 0f;
+		g = 0f;
+		b = 0f;
+		newColor = new Color (r, g, b, 1f);
+		material.color = newColor;
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		text = "";
 		for (int i = 0; i < filters.Length; i++) {
 
 			script = filters [i].GetComponent<Clickable> ();
@@ -35,14 +43,16 @@ public class Projection : MonoBehaviour {
 			if (filtersValue [i]) {
 				script = filters [i].GetComponent<Clickable> ();
 				if (script.myColor == Clickable.Colors.A)
-					text += "A";
-				if (script.myColor == Clickable.Colors.B )
-					text += "B";
-				if (script.myColor == Clickable.Colors.C )
-					text += "B";	
+					r = 1f;
+				if (script.myColor == Clickable.Colors.B)
+					b = 1f;
+				if (script.myColor == Clickable.Colors.C)
+					g = 1f;	
 
 			}
 		
 		}
+		newColor = new Color (r, g, b, 1f);
+		material.color = newColor;
 	}
 }

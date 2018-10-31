@@ -9,7 +9,6 @@ public class Clickable : MonoBehaviour {
 		A, B, C
 	};
 	public Colors myColor;
-    public GameObject lenseLight;
 
 	// Use this for initialization
 	void Start () {
@@ -29,14 +28,12 @@ public class Clickable : MonoBehaviour {
 				Debug.Log("box should move inside the cube");
 				transform.Translate(1f, 0, 0);
 				isInside = true;
-                lenseLight.SetActive(true);
 			}
 			else if (Input.GetMouseButtonDown(0) && isInside)
 			{
 				Debug.Log("box should move outside the cube");
 				transform.Translate(-1f, 0, 0);
 				isInside = false;
-                lenseLight.SetActive(false);
 			}		
 		
 		}
