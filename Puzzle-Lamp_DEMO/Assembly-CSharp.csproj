@@ -57,16 +57,16 @@
      <Compile Include="Assets\Scripts\Projection.cs" />
      <Compile Include="Assets\Scripts\RotateObject.cs" />
  <Reference Include="UnityEditor.StandardEvents">
- <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_Demo_GIT/Puzzle_Lampe/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_Demo_GIT/Puzzle_Lampe/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_Demo_GIT/Puzzle_Lampe/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/Documents/University/OverlayProject/Puzzle_Lamp/Puzzle-Lamp_Demo_GIT/Puzzle_Lampe/Puzzle-Lamp_DEMO/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
