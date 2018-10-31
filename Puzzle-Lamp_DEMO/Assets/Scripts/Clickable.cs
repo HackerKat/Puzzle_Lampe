@@ -12,8 +12,6 @@ public class Clickable : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-		
 		layerMask = LayerMask.GetMask("Clickable");
 	}
 	
@@ -23,19 +21,19 @@ public class Clickable : MonoBehaviour {
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
-		if (Physics.Raycast (ray, out hit, 1000.0f, layerMask) ) {
-			if (Input.GetMouseButtonDown(0) && !isInside) {
+		if (Physics.Raycast (ray, out hit, 1000.0f, layerMask)) {
+			if (hit.collider.gameObject == this.gameObject) {
+				if (Input.GetMouseButtonDown (0) && !isInside) {
 //				Debug.Log("box should move inside the cube");
-				transform.Translate(1f, 0, 0);
-				isInside = true;
-			}
-			else if (Input.GetMouseButtonDown(0) && isInside)
-			{
+					transform.Translate (1f, 0, 0);
+					isInside = true;
+				} else if (Input.GetMouseButtonDown (0) && isInside) {
 //				Debug.Log("box should move outside the cube");
-				transform.Translate(-1f, 0, 0);
-				isInside = false;
-			}		
+					transform.Translate (-1f, 0, 0);
+					isInside = false;
+				}		
 		
+			}
 		}
 
 	}

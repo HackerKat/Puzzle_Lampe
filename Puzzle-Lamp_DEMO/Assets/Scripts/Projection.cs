@@ -33,6 +33,9 @@ public class Projection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		r = 0f;
+		g = 0f;
+		b = 0f;
 		for (int i = 0; i < filters.Length; i++) {
 
 			script = filters [i].GetComponent<Clickable> ();
