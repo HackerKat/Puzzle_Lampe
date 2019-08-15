@@ -1,2 +1,2 @@
-# Puzzle_Lampe
-Demo Version of the game project
+# Puzzle Lamp
+Demo Version of the game project for University project
